@@ -43,9 +43,9 @@ proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt install sudo wget
 
 #Install DRI3 patched driver
 wget https://github.com/bengkelgawai/Termux_XFCE/raw/main/mesa-vulkan-kgsl_23.3.0-ubuntu_arm64.deb
-mv mesa-vulkan-kgsl_23.3.0-ubuntu_arm64.deb $HOME/../usr/var/lib/proot-distro/installed-rootfs/debian/root/
-proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 dpkg -i mesa-vulkan-kgsl_23.3.0-ubuntu_arm64.deb
-proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 rm mesa-vulkan-kgsl_23.3.0-ubuntu_arm64.deb
+mv mesa-vulkan-kgsl_24.2.0-ubuntu_arm64.deb $HOME/../usr/var/lib/proot-distro/installed-rootfs/debian/root/
+proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 dpkg -i mesa-vulkan-kgsl_24.2.0-ubuntu_arm64.deb
+proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 rm mesa-vulkan-kgsl_24.2.0-ubuntu_arm64.deb
 
 #Create user
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 groupadd storage
